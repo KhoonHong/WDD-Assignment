@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/portfolio.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/titleanddescript.css" rel="stylesheet" type="text/css" />
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <script src="javascript/home.js"></script>
+        <script src="javascript/portfolio.js"></script>
+    </head>
+    <body>
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Your content start here!!! -->
+        <br/><br/><br/><br/><br/><br/>
+        <h1 class="title1">Portfolio</h1>
+
+        <div style="margin-left: 150px;" class="aligner">
+            <p class="description">The images presented in the slideshows below are carefully hand-picked by the enthusiasts from our Travel ARC team and all the images displayed below were crafted with precision by Travel ARC team.</p>
+        </div>
+        
+        <br/><br/>
+
+        <div class="slideshow" >
+            <div onclick="back();" class="back"><p><</p></div>
+            <div onclick="front();" class="front1"><p>></p></div>
+        </div>
+
+  
+
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

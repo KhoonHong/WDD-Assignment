@@ -1,0 +1,108 @@
+section{
+    background-color:rgba(201, 244, 250, 0.4);
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+section #title{
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px rgb(69, 30, 241,0.4) ;
+}
+
+section .ABC{
+    margin-left: 100px;
+}
+
+section a:hover{
+    background-color:rgb(253,253,208);
+}
+
+section a{
+    text-decoration: none;
+}
+
+section div.service h1{
+    font-style: italic;
+    font-kerning: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ABC{
+    width: 30%;
+    padding-left: 35px;
+    float: left;
+    clear: left;
+    padding-top: 50px;
+}
+aside{
+    width: 50%;
+    float: left;
+    text-align: left;
+    bottom: 10px;
+    line-break: 8px;
+    word-spacing: 4px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-family: cursive;
+}
+
+div img{
+    margin-left: 5px;
+}
+
+aside .head{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color:black;
+    background-color: rgb(255,255,255,0.4);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    word-spacing: 10px;
+    letter-spacing: 6px;
+}
+
+
+#Insurance,#Visa,#Ticketing,#Hotel{
+    display: none;
+    font-size: 20px;
+    color: black;
+    border: 3px solid black;
+    margin-bottom: 100px;
+}
+#Insurance::after,#Visa::after,#Ticketing::after,#Hotel::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+a:active{
+    color:grey;
+}
+
+#InsuranceA:hover ~ #Insurance{
+    display: block;
+}
+
+p.content{
+    width: 95%;
+    float: left;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+img.photo{
+    width: 95%;
+    float: left;
+    margin-left: 200px;
+    margin-top: 5px;
+    width: 100%;
+    float: right;
+}
+
+

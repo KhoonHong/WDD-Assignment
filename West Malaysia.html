@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/westmalaysia.css" rel="stylesheet" type="text/css"/>
+        <link href="stylesheets/titleanddescript.css" rel="stylesheet" type="text/css"/>
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/home.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/home.js"></script>
+        <script src="javascript/westmalaysia.js"></script>
+        <script>
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                fadeIn(document.querySelector(".fadein3"), 7000);
+                if (currentScroll >= 100){
+                    fadeIn(document.querySelector(".fadein1"), 8000);
+                }
+                if (currentScroll >= 100){
+                    setTimeout("fadeIn(document.querySelector('.fadein2'), 4000);", 1200);
+                }
+                if (currentScroll >= 600){
+                    fadeIn(document.querySelector(".fadein4"), 8000);
+                }   
+                if (currentScroll >= 600){
+                    setTimeout("fadeIn(document.querySelector('.fadein5'), 4000);", 1200);
+                }
+                if (currentScroll >= 1600){
+                    fadeIn(document.querySelector(".fadein6"), 8000);
+                }   
+                if (currentScroll >= 1600){
+                    setTimeout("fadeIn(document.querySelector('.fadein7'), 4000);", 1200);
+                }
+                if (currentScroll >= 2500){
+                    fadeIn(document.querySelector(".fadein8"), 8000);
+                }   
+                if (currentScroll >= 2500){
+                    setTimeout("fadeIn(document.querySelector('.fadein9'), 4000);", 1200);
+                }
+            }
+            )
+        </script>
+    </head>
+    <body>
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+				</a>
+            </div>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="penang.html">Penang</a>
+                        <a href="kl.html">Kuala Lumpur</a>
+                        <a href="malacca.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="top5.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="tac.html">T&C</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Your content start here!!! -->
+        <br/><br/><br/><br/><br/>
+
+        <div class="bg-image2">
+            <div class="blur"></div>
+        </div>
+        <blockquote>
+        <br/>
+        <div class="fadein3">
+        <h1 class="title1">West Malaysia</h1>
+        <div class="aligner">
+            <p class="description"> Peninsular Malaysia, Malaysian Semenanjung Malaysia, also called West Malaysia or Malaysian Malaysia Barat, region of the 13-state federation of Malaysia. It occupies the southern half of the Malay Peninsula and is separated from East Malaysia <small>(on the island of Borneo)</small> by the South China Sea. Formerly the Federation of Malaya, it contains the bulk of Malaysia’s population and has the capital city of Kuala Lumpur and the administrative centre of Putrajaya.</p>
+        </div>
+        
+        <br/><br/>
+        </div>
+        <div class="fadein1">
+        <div style="font-family: cursive; font-size: 24px;" class="btn btn-one">
+            <span><p><b>Northern Region</b></p></span>
+        </div>
+        <br/>
+        <div class="containerlul" style="width: 96%; padding-left: 2%;">
+            <div>
+                <div >
+                    <img class="image"  src="img/pictures/perlis/WeChat Image_20200823144559.jpg" alt="perlis" width="300" height="250">
+                </div>
+                <div style="padding-left: 15%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Perlis</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="image" src="img/pictures/kedah/Kedah-Paddy.jpg" alt="kedah" width="300" height="250">
+                </div>
+                <div style="padding-left: 15%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Kedah</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="image" src="img/pictures/penang/ad2ff4071a006499e6bf37315b3b478.jpg" alt="penang" width="300" height="250">
+                </div>
+                <div style="padding-left: 15%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Penang</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="image" src="img/pictures/perak/WeChat Image_20200823144629.jpg" alt="perak" width="300" height="250">
+                </div>
+                <div style="padding-left: 15%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Perak</b></p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br/>
+        <div class="fadein2" style="text-align: center;">
+            <p class="passage">The northern region is made famous by a couple of states. Well, no. that would be most biased to say that. In actual fact, each of the states in the northern region is fabulous in its own rights. The northern region comprises of <em>Perlis</em> and <em>Kedah</em>, the two northernmost states. This is followed by <em>Penang</em> and <em>Perak</em>. <em>Perlis</em> is the smallest state in the country. Although the smallest yet <em>Perlis</em> has established itself over the years as a progressive state in the historical scene. It has existed since pre-historic times with proofs in the form of ancient remains at <em>Teguh Lembu Cave</em> in <em>Beseri</em>. However, small as it is, it was overshadowed by the <em>Kedah Sultanate</em> - <em>Kedah</em> and <em>Perlis</em> are both rich lands with gentle slopping plains. These two areas make up the majority of paddy growing regions in <em>Malaysia</em>. It is aptly nicknamed the <cite>Rice Bowl of Malaysia</cite></p>
+                <br/><br/>
+                <a href="Northern Region.html" class="cta">
+                    <span>Discover Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+        </div>
+
+        
+        <br/><br/>
+
+            
+        <br/><br/><br/>
+        <div class="fadein4">
+            <hr>
+            <br/><br/><br/>
+            <div style="font-family: cursive; font-size: 24px;" class="btn btn-one">
+                <span><p><b>East Coast Region</b></p></span>
+            </div>
+
+            <br/>
+        <div class="containerlul" style="width: 98%;">
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/kelantan/WeChat Image_20200823145237.png" alt="kelantan" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Kelantan</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/terengganu/WeChat Image_20200823145031.jpg" alt="terengganu" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Terengganu</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/pahang/WeChat Image_20200823144947.jpg" alt="pahang" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Pahang</b></p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br/>
+        <div class="fadein5" style="text-align: center;">
+            <p class="passage">The East Coast of Malaysia is made up of Pahang, Kelantan and Terengganu. Kelantan and Terengganu can be considered very different from all the other states in Peninsular Malaysia. These two states have very strong Malay culture mixed with some Thai elements. Being in Kelantan and Terengganu somehow seemed to draw you back to an ancient time. This is especially so for the state of Kelantan, where it is looked upon as the main branch of the Malay culture.</p>
+                <br/><br/>
+                <a href="East coast Region.html"  class="cta">
+                    <span>Discover Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+        </div>
+        <br/>
+        <br/><br/><br/>
+        <div class="fadein6">
+            <hr>
+            <br/><br/><br/>
+            <div style="font-family: cursive; font-size: 24px;" class="btn btn-one">
+                <span><p><b>Central Region</b></p></span>
+            </div>
+
+            <br/>
+        <div class="containerlul" style="width: 98%;">
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/selangor/5c57c998fafca72a7e709d9d1e148a6.jpg" alt="selangor" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Selangor</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/kuala lumpur/wp2378918.jpg" alt="kuala lumpur" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Kuala Lumpur</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/putrajaya/putrajaya-mosque.jpg.jpg" alt="putrajaya" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Putrajaya</b></p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br/>
+        <div class="fadein7" style="text-align: center;">
+            <p class="passage">The middle sector of the country, or <cite>politically-correctly</cite> known as the central region, comprises mainly of the <cite>happening</cite> states. Here is where the hub of the nation is located, the fun zones and the main governmental offices. The central region has only two states, namely the states of <em>Selangor</em> and <em>Negeri Sembilan</em>. The state capital of <em>Selangor</em> is called <em>Shah Alam</em>. The areas of <em>Selangor</em> surround the <em>Federal Territory of Kuala Lumpur</em>, which is the capital of <em>Malaysia</em>. Most of the exciting agendas, state meetings, lifestyle & entertainment spots as well as delicious cuisine can be found in <em>Klang Valley</em>, <em>Selangor's</em> main development center. <em>Selangor</em> is also the country's most developed state. <em>Klang Valley</em> encompasses and stretches all the way from <em>Kuala Lumpur</em> to <em>Port Klang</em>, the country's main and busiest port on the west coast of the country. The port overlooks the Straits of <em>Melaka</em>.</p>
+                <br/><br/>
+                <a href="Central Region.html" class="cta">
+                    <span>Discover Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+        </div>
+        <br/>
+        <br/><br/><br/>
+        <div class="fadein8">
+            <hr>
+            <br/><br/><br/>
+            <div style="font-family: cursive; font-size: 24px;" class="btn btn-one">
+                <span><p><b>Southern Region</b></p></span>
+            </div>
+
+            <br/>
+        <div class="containerlul" style="width: 98%;">
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/negeri sembilan/WeChat Image_20200823144746.jpg" alt="negeri sembilan" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Negeri Sembilan</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/melacca/WeChat Image_20200823144827.jpg" alt="melacca" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Melacca</b></p></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/johor/WeChat Image_20200823144902.jpg" alt="johor" width="350" height="250">
+                </div>
+                <div style="padding-left: 20%;">
+                    <div class="btn btn-one">
+                        <span><p style="font-family: cursive; font-size: 25px;"><b>Johor</b></p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br/>
+        <div class="fadein9" style="text-align: center;">
+            <p class="passage">The southern region has one of the best tourist spots around the country, or as some claimed, around the world! The southern side of <em>Peninsular Malaysia</em> comprises of the states of <em>Melaka</em> and <em>Johor</em>. If you are one who is interested in history, then the southern region is the place for you. <em>Malaysia's Historical City</em>  is <em>Melaka</em>, a place that is filled with cultural and historical aspects. Its heritage was set many years ago, thanks to its centralized location as one of the world's most famous trading post. On the nature end of <em>Johor</em>, <em>Johor</em> is made out of huge stretches of fruits and oil plantations. It is especially famous for the production of pineapple. Since <em>Johor</em> is quite a big state, there are stretches of wilderness, beaches and beautiful coral islands that have never failed to woo tourists from all over the place.</p>
+                <br/><br/>
+                <a href="Southern Region.html" class="cta">
+                    <span>Discover Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+        </div>
+        <br/><br/><br/><br/>
+        </blockquote>
+        </div>
+        <div class="bg-image2">
+            <div class="blur"></div>
+        </div>
+
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+.slideshow {
+  margin-left: 5%;
+  width: 90%;
+  float: left;
+  height: 900px;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px grey;
+  transition: transform .2s;
+}
+
+.back {
+  width: 5%;
+  height: 900px;
+  float: left;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.front1 {
+  width: 5%;
+  height: 900px;
+  float: right;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.back:hover {
+  background-color: rgba(0,0,0,0.25);
+}
+
+.front1:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.slideshow::after{
+  display:table;
+  content: "";
+  clear: both;
+}
+
+.slideshow p{
+  font-size: 80px;
+  margin-top: 400px;
+  padding-left: 20%;
+  color: black;
+  text-shadow: 10px 10px 10px black;
+  font-weight: bold;
+  user-select: none;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../img/home/siennia.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(4px); 
+  height: 700px;
+	width: 100%;
+}
+
+.slideshow:hover{
+  transform: scale(1.01);
+}
+
+

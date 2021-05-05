@@ -1,0 +1,56 @@
+.terms{
+    width: 100%;
+    float: left;
+    align-content: center;
+}
+
+.tnc{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 6px 2px cadetblue;
+    font-size: 80px;
+    margin: auto;
+    padding: 70px;
+    height: 100px;
+    background-color: #e6f3ff;    
+}
+
+.rules{
+    float: left;
+    width: 80%;
+    margin-left:10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    font-family:cursive ;
+    text-align: justify;
+    font-size: 17px;
+    
+}
+
+.rules p{
+    padding-top: 5px;
+}
+
+.rules li{
+    padding: 8px;
+}
+
+table{
+    border: 1px solid black;
+    width: 60%;
+    border-collapse: collapse;
+}
+ 
+ th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+    background-color:  #e6e6ff;
+}
+
+tr:hover{
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/book.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/basic.js"></script>
+        <script src="javascript/book.js"></script>
+    </head>
+    <body>
+        
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Your content start here!!! -->
+        <div class="customer"  style="opacity: 0;">
+            <div class="custcontainer">
+            <table>
+                <colgroup>
+                    <col class="first" />
+                    <col class="second" />
+                </colgroup>
+                <tr>
+                    <td><b>Name</b> &#9997;</td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td><b>Phone number</b > &#9742;</td>
+                    <td id="telno"></td>
+                </tr>
+                <tr>
+                    <td><b>Package</b> &#9992;</td>
+                    <td id="package"></td>
+                </tr>
+                <tr>
+                    <td><b>Price</b> &#128179;</td>
+                    <td id="price"></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="fillcontainer" style="opacity: 0;">
+            <script>
+                fadeIn(document.querySelector(".fillcontainer"), 1000);
+            </script>
+        <div class="fill">
+                <form id="userDetails" name="userDetails">
+                    <div class="userform">
+                    <label for="fullname">Full Name: </label>
+                    <input id="uname" name="uname" placeholder="XXX XXX XXX" autofocus required />
+
+                    <label for="utelno">Phone Number:</label>
+                    <input id="utelno" name="utelno" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="01XXXXXXXX" type="tel" required/>
+
+                    <div class="date">
+                        <div class="start">
+                            <label for="ustart">Start date:</label>
+                        <input id="utstart" name="utstart" type="date" required />
+                        </div>
+                        
+                        <div class="end">
+                            <label for="uend">End date:</label>
+                        <input id="uend" name="uend" type="date" required />
+                        </div>
+                    </div>
+
+                    <label for="upackage">Package choose: </label>
+                    <select id="upackage" name="upackage">
+                        <optgroup label="Promotions">
+                            <option value="p1">Kuala Lumpur</option>
+                            <option value="p2">Penang</option>
+                            <option value="p3">Malacca</option>
+                        </optgroup>
+                        <optgroup label="International">
+                            <option value="i1">Seoul</option>
+                            <option value="i2">Tokyo</option>
+                        </optgroup>
+                        <optgroup label="Domestic">
+                            <option value="d1">Sabah</option>
+                            <option value="d2">Sarawak</option>
+                            <option value="d3">Perlis</option>
+                            <option value="d4">Kedah</option>
+                            <option value="d5">Penang</option>
+                            <option value="d6">Perak</option>
+                            <option value="d7">Kelantan</option>
+                            <option value="d8">Terengganu</option>
+                            <option value="d9">Pahang</option>
+                            <option value="d10">Selangor</option>
+                            <option value="d11">Kuala Lumpur</option>
+                            <option value="d12">Putra Jaya</option>
+                            <option value="d13">Negeri Sembilan</option>
+                            <option value="d14">Malacca</option>
+                            <option value="d15">Johor</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                    <div class="formdetails">
+                        <img src="logo.png" alt="Travel Arc" />
+                        <h1>Travel Arc Sdn Bhd</h1>
+                        
+                     <p><a onclick="detailsSubmit(); return false;">Book Now!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="confirmation"  style="opacity: 0;">
+            <div class="confirmDetails">
+                <h2>Total: <span id="total"></span></h2>
+                <h2>Deposit: <span id="deposit"></span></h2>
+            </div>
+            <p><a onclick="pay(); return false;">Confirm</a></p>
+            <p>Please contact us with your screenshot after you paid. You will need to pay for the remaining balance in <b>1 month</b> after payment!.</p>
+        </div>
+        <div class="payment"  style="opacity: 0;">
+            <form id="payMethod" name="payMethod">
+                <input type="radio" id="paypal" name="payment" value="paypal" checked />
+                <label for="paypal">
+                    <img src="img/book/paypal.png" alt="paypal" />
+                </label>
+                <input type="radio" id="fpx" name="payment" value="fpx"/>
+                <label for="fpx">
+                    <img src="img/book/fpx.png" style="width: 150px;" alt="fpx" />
+                </label>
+                <input type="radio" id="molpay" name="payment" value="molpay" />
+                <label for="molpay">
+                    <img src="img/book/molpay.png" alt="molpay" />
+                </label>
+                <input type="radio" id="skrill" name="payment" value="skrill" />
+                <label for="skrill">
+                    <img src="img/book/skrill.png" alt="skrill" />
+                </label>
+                <h1>Amount payable: 
+                    <span id="amounts"></span></h1>
+                    <p><a onclick="sucess(); return false;">Pay</a></p>
+            </form>
+        </div>
+        <div class="success"  style="opacity: 0;">
+            <p>Payment Successful! Please screenshot this page and contact us for further action!</p>
+            <p>Reference id: <span id="rfid"></span></p>
+        </div>
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

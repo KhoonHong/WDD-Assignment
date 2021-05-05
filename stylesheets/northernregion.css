@@ -1,0 +1,221 @@
+body {
+  background-color: white;
+}
+
+
+.containerlul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.fadein1, .fadein2, .fadein3, .fadein4, .fadein5{
+  opacity: 0;
+}
+
+
+.hoverTable {
+  padding: 7px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-right:200px;
+  margin-right: 50px;
+}
+
+thead {
+  border-bottom: 2px solid black;
+}
+
+td {
+  text-align: center;
+}
+
+.hoverTable tr{
+  background:  #e6f3ff;
+} 
+.hoverTable tfoot tr:hover {
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+th, td {
+  padding: 10px 15px 10px 15px;
+  font-family: cursive;
+  font-size: larger;
+}
+
+.image {
+  box-shadow: 10px 10px 10px grey;
+  margin-left: 100px;
+  transition: transform .2s;
+}
+
+.image:hover{
+  transform: scale(1.05);
+}
+
+.title {
+  font-family: cursive;
+  font-size: 25px;
+  padding-left: 100px;
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+  
+}
+  
+.passage {
+  font-family: cursive;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 25px;
+  color: grey;
+  text-align: center;
+}
+
+.price {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 50px;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../img/home/World_Houses_on_stilts_in_Penang__Malaysia_096401_.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foreground {
+  backdrop-filter: blur(10px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-image1 {
+  /* The image used */
+  background-image: url("../img/home/Malaysia-Beautiful-Place-Kuala-Lumpur-Southeast-Asia-HD-Desktop-Wallpaper-1920x1080.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image2 {
+  /* The image used */
+  background-image: url("../img/home/penang.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image3 {
+  /* The image used */
+  background-image: url("../img/home/malacca.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image4 {
+  /* The image used */
+  background-image: url("../img/home/665874.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(4px); 
+  height: 700px;
+	width: 100%;
+}
+
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-family: cursive;
+  }
+  
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #ffab9d;
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+  }
+  

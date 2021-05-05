@@ -1,0 +1,229 @@
+/* Please dont edit this file! This is the basic structure of the webpage */
+body{
+    margin: 0;
+    padding: 0;
+}
+.air{
+    width: 8%;
+    float: left;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    float: left;
+    background-color: rgba(135,206,235, 0.6);
+    clear: both;
+    font-family: cursive;
+    
+}
+.nav::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.logo {
+    width: 25.2%;
+    float: left;
+}
+.logo h1{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-family: cursive;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: auto;
+    float: left;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 58.8%;
+    float: left;
+}
+
+nav li {
+    float: left;
+}
+nav li a, nav .dropbtn{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav li a:hover, nav .dropbtn:hover .dropbtn {
+    border-bottom-style: solid;
+    border-color: rgb(0, 0, 102);
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(230, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(230, 255, 255, 0.6);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    float: left;
+    background-color: rgba(135,206,235, 0.6);
+}
+
+.contactus{
+    width: 25%;
+    float: left;
+    margin-left: 7.5%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.hotline{
+    width: 25%;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.gettouch{
+    width: 25%;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+footer h1{
+    clear: both;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: cursive;
+    text-transform: uppercase;
+    font-variant: small-caps;
+	width: auto;
+}
+
+footer h2{
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+}
+footer p{
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+.address img, .tel img, .email img, .facebook img, .twitter img, .instagram img {
+    clear: left;
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.address span, .tel span, .email span, .facebook span, .twitter span, .instagram span{
+    width: 85%;
+    margin-left: 5px;
+    float: left;
+}
+
+.tel span, .email span, .facebook span, .twitter span, .instagram span{
+    margin-top: 10px;
+}
+
+footer a, footer a:active, footer a:hover, footer a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#msg {
+    height: 200px;
+    border-color: rgb(0, 0, 102);
+    border-style: solid;
+    resize: none;
+    border-width: 2px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    margin-top: 5px;
+    width: 50%;
+    border-color: rgb(0, 0, 102);
+    border-style: solid;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 10px;
+}
+
+.gettouch ::placeholder {
+    vertical-align: to;
+}
+
+input[type="submit"] {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #9999ff;
+    border-color: #00004d;
+    border-style: solid;
+    border-radius: 5px;
+    color: #000099;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6666ff;
+}
+
+.cuh1 {
+	font-size:30px; 
+	font-weight:bold; 
+}
+
+
+  

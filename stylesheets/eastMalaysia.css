@@ -1,0 +1,119 @@
+.containerlul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: space-around;
+    justify-content: space-between;
+}
+
+.fadein1, .fadein2, .fadein3, .fadein4{
+  opacity: 0;
+}
+
+
+img { 
+  border-radius: 5px;
+}
+  
+.passage {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: justify;
+  color: grey;
+}
+
+.image {
+  box-shadow: 10px 10px 10px grey;
+  margin-left: 10px;
+  transition: transform .2s;
+}
+
+.image:hover{
+  transform: scale(1.05);
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../img/background.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image1 {
+  /* The image used */
+  background-image: url("../img/top5.jpg");
+  height: 50%;
+  
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(4px); 
+  height: 700px;
+	width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: cursive;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 171, 157, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #ffab9d;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}

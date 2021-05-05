@@ -1,0 +1,122 @@
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 5px thistle;
+}
+.body{
+    float: left;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.image{
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+}
+
+.content{
+    padding: 8px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 4px;
+    font-size: 17px;
+    display: none;
+}
+
+.event{
+    width: 28%;
+}
+
+.slides{
+    width: 100%;
+    float: left;
+	display: flex;
+	flex: row wrap;
+	justify-content: space-around;
+}
+
+
+.event img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.event p {
+	width: 100%;
+}
+
+#slide1,#slide2,#slide3{
+    display: block;
+}
+
+#slide4,#slide5,#slide6{
+    display: none;
+}
+
+div#slide1 {
+    order: 1;
+    border:  3px solid black ;
+    height: 100%;
+}
+
+#slide2 {
+	order: 2;
+    border: 3px solid black;
+    height: 100%;
+}
+
+#slide3 {
+    order: 3;
+    border: 3px solid black;
+    height: 100%;
+}
+
+#slide4 {
+    border: 3px solid black;
+    height: 100%;
+}
+
+#slide5 {
+    border: 3px solid black;
+    height: 100%;
+}
+
+#slide6 {
+    border: 3px solid black;
+    height: 100%;
+}
+
+.foot h2{
+    padding: 4px;
+    font-size: 25px;
+    font-family: cursive;
+}
+.foot{
+    padding: 8px;
+    font-size: 20px;
+    font-family: cursive;
+}
+p.button{
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 5px;
+    font-size: 2em;
+}
+.content p{
+    width: 100%;
+}
+.readmore p{
+    font-size: 15px;
+    float: left;
+    text-align: right;
+    color: tomato;
+    background-color: rgb(255,255,255,0.3);
+}
+.readmore a:hover{
+    background-color: gainsboro;
+}
+
+
+

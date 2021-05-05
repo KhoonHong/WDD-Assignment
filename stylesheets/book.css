@@ -1,0 +1,262 @@
+.customer, .fill, .confirmation, .payment, .fillcontainer {
+    float: left;
+    width: 100%;
+    transition: display 1s;
+}
+
+.customer {
+    width: 100%;
+    background-image: url('../img/book/background.jpg');
+    background-size: cover;
+    background-position: center;
+}	
+.customer::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.confirmation, .payment, .success {
+    display: none;
+}
+
+.customer table {
+    width: 100%;
+    margin: 50px auto 20px;
+    border-collapse: collapse;
+    background-color: rgba(135,206,235, 0.5);
+
+}
+
+.custcontainer {
+    width: 50%;
+    float: left;
+    margin: 100px 0px 0px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.customer td {
+    border-collapse: collapse;
+    border: 3px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    font-family: cursive;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.customer col.first {
+    width: 20%;
+    background-color: rgba(135,206,235, 0.3);
+}
+
+.customer col.second {
+    width: 80%;
+}
+
+.fill form label {
+    display: block;
+    clear: left;
+}
+
+.userform {
+    width: 30%;
+    margin-left: 20%;
+    float: left;
+}
+
+.formdetails {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.formdetails img {
+    margin-left: 100px;
+    width: 50%;
+}
+
+.formdetails input[type="submit"]{
+    margin-top: 20px;
+    margin-left: 95px;
+    cursor: pointer;
+}
+
+.userform input, .userform select{
+    width: 40%;
+    padding: 10px 10px;
+    background-color: rgba(135,206,235, 0.2);
+    border-width: 1.5px;
+    border-color: black;
+    border-radius: 7px;
+}
+
+.userform input:focus, .userform select:focus{
+    background-color: rgba(135,206,235, 0.4);
+}
+
+label {
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 10px;
+}
+
+.date input, .date label {
+    width: 80%;
+    float: left;
+    clear: none;
+}
+
+.start, .end {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+.fillcontainer {
+    background-color: rgba(135,206,235, 0.2);
+}
+
+.fillcontainer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.customer{
+    background-color: white;
+}
+
+.userform, .formdetails{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formdetails h1 {
+    margin-left: 100px;
+    font-family: cursive;
+}
+
+.confirmation {
+    background-color: rgba(135,206,235, 0.2);
+}
+.confirmDetails {
+    width: 20%;
+    margin: auto;
+    background-color: rgba(135,206,235, 0.5);
+    padding: 5px 20px;
+    margin-top: 50px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+
+.confirmation a, .formdetails a, .payment a{
+    text-decoration: none;
+    color: rgb(87, 39, 7);
+    background-color: rgb(230, 255, 255);
+    padding: 10px;
+    width: 100%;
+    border-color: rgb(0, 0, 102);
+    border-radius: 5px;
+    border-style: solid;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.confirmation a:hover, .formdetails a:hover, .payment a:hover{
+
+    background-color: rgba(135,206,235, 0.6);
+}
+
+.confirmation p {
+    clear: both;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.confirmation {
+    padding-bottom: 50px;
+}
+
+.payment form label img {
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.payment form input {
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+.payment {
+    background-color: rgba(135,206,235, 0.2);
+    
+}
+
+.success {
+    background-color: rgba(252, 0, 0, 0.15);
+    font-family: cursive;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.success p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.payment form {
+    width: 80%;
+    margin: 100px auto;
+    font-family: cursive;
+}
+
+.payment p{
+    float: right;
+    margin-right: 200px;
+    font-size: 20px;
+    width: 10%;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.payment a {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.payment h1 {
+    margin-top: 50px;
+}
+
+.fillcontainer p {
+    margin-left: 100px;
+}
+
+.customer img {
+    width: 32px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.customer td{
+    vertical-align: middle;
+}
+
+.customer {
+    display: none;
+}

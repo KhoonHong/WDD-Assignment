@@ -1,0 +1,114 @@
+.container{
+    float: left;
+    width: 100%;
+}
+.image{
+    width: 100%;
+    max-height: 5in;
+}
+.overlay{
+    position: absolute;
+    top: 85px;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(255,255,255,0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .9s ease;
+}
+.container:hover .overlay{
+    bottom: 0;
+    height: 5.02in;
+}
+
+.title{
+    color: black;
+    font-family: cursive;
+    font-size: 4.5em;
+    word-spacing: 10px;
+    letter-spacing: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.content{
+    float: left;
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.Information{
+    border: dashed black;
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px; 
+    height: 375px;
+    background-color: rgb(250,250,210,0.4);
+}
+.slideshow{
+    width: 40%;
+    float: left;
+    margin-left: 110px;
+    margin-top: 30px;
+    height: 400px;
+    background-size: cover;
+    transition: background-image 1s;
+}
+.video{
+    width: 80%;
+    float: left;
+    margin-left: 155px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+iframe{
+    border: 5px solid black;
+}
+.slideshow p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 370px;
+}
+.slideshow a{
+    text-shadow: 5px 5px 10px darkgrey;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.Intro{
+    width: 100%;
+    float: left;
+    font-size: 3.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px lightsteelblue ;
+    color: black;
+}
+.Intro p{
+    margin: 0;
+
+}
+.videoIntro{
+    width: 100%;
+    float: left;
+    font-size: 3.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px lightpink ;
+    color: black;
+}
+.videoIntro p{
+    margin: 0;
+}
+
+
+

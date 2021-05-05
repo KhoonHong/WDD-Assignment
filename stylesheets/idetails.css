@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    float: left;
+    width: 100%;
+    justify-content: space-around;
+    background: url('../img/interp/header1.jpg') no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.h1, .h2, .h3 {
+    text-align: center;
+    width: 30%;
+}
+.h1 img, .h2 img, .h3 img {
+    margin-top: 80px;
+    width: 150px;
+}
+
+.h1 h1, .h2 h1, .h3 h1 {
+    font-family: cursive;
+    font-size: 3em;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+#hotel, #flight{
+    float: left;
+    width: 100%;
+}
+
+.hotelImg, .flightImg{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.hotelImg img, .flightImg img{
+    width: 70%;
+    height: 350px;
+    margin: 50px 0px;
+    border: 5px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.hotelDesc, .flightDesc {
+    float: left;
+    width: 50%;
+    font-family: cursive;
+}
+
+.hotelDesc p, .flightDesc p{
+    margin-right: 100px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.hotelDesc h1, .flightDesc h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.flightDesc h1, .flightDesc p {
+    margin-left: 100px;
+    margin-right: 0px;
+}
+
+.hotelDesc a, .flightDesc a, .schedule a{
+    text-decoration: none;
+    color: rgb(87, 39, 7);
+    background-color: rgb(230, 255, 255);
+    padding: 10px;
+    width: 100%;
+    border-color: rgb(0, 0, 102);
+    border-radius: 5px;
+    border-style: solid;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hotelDesc a:hover, .flightDesc a:hover, .schedule a:hover{
+    
+    background-color: rgba(135,206,235, 0.6);
+}
+
+.scontainer {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.sdetail{
+    width: 25%;
+    background-color: rgba(135,206,235, 0.2);
+    border: 5px solid rgba(135,206,235,0.3);
+    border-radius: 20px;
+    font-family: cursive;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sdetail h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.date {
+    font-size: 20px;
+}
+
+.sheader {
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+}
+
+.schedule {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.sdetail ul {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.schedule, .flight, .hotel{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/northernregion.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/titleanddescript.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/home.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/home.js"></script>
+        <script src="javascript/westmalaysia.js"></script>
+        <script>
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll >= 600){
+                    fadeIn(document.querySelector(".fadein1"), 8000);
+                }
+                if (currentScroll >= 1200){
+                    fadeIn(document.querySelector(".fadein2"), 8000);
+                }   
+                if (currentScroll >= 1700){
+                    fadeIn(document.querySelector(".fadein4"), 8000);
+                }   
+                if (currentScroll >= 2000){
+                    fadeIn(document.querySelector(".fadein5"), 8000);
+                }
+            }
+            )
+        </script>
+    </head>
+    <body>
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Your content start here!!! -->
+        <br/><br/><br/><br/><br/>
+        <div class="bg-image4">
+            <div class="blur"></div>
+        </div>
+        <blockquote>
+        <br/>
+        <h1 class="title1">Southern Region</h1>
+        <div class="aligner">
+            <p class="description">The southern region has one of the best tourist spots around the country, or as some claimed, around the world! The southern side of Peninsular Malaysia comprises of the states of Melaka and Johor. If you are one who is interested in history, then the southern region is the place for you. Malaysia's Historical City is Melaka, a place that is filled with cultural and historical aspects. Its heritage was set many years ago, thanks to its centralized location as one of the world's most famous trading post. This was the place where many rich and important traders and European conquerors made their home many years ago. The remnants of ruined buildings and fortresses speak a thousand words. Its glorious past is still very much a part of the tourist attractions in Melaka. For those who are interested in quaint antiques and other old artifacts, Melaka is the place for you. Melaka is also a food haven, with their popular cuisine being that of the Baba & Nyonya's or Peranakan food. Mainly on the spicy side, these dishes promise to tingle your taste buds and make you wanting more.</p>
+        </div>
+        <br/><br/><br/>
+        <!--line 1-->
+        <div class="fadein1">
+        <div class="containerlul">
+            <div>
+                <br/><br/><br/>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/negeri sembilan/WeChat Image_20200823144746.jpg" alt="negeri sembilan" width="350" height="300">
+                </div>
+                <div style="margin-left: 155px;">
+                    <p class="title">
+                    <div class="btn btn-one">
+                        <span style="font-family: cursive;font-size: 25px;"><b>Negeri Sembilan</b></span>
+                    </div>
+                </p>
+                </div>
+            </div>
+            <div style="margin: auto;">
+                <table class="hoverTable" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Place</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>8:00am</th>
+                            <td>Kota Lukut</td>
+                        </tr>
+                        <tr>
+                            <th>10:00am</th>
+                            <td>Cape Rachado Lighthouse</td>
+                        </tr>
+                        <tr>
+                            <th>12:00pm</th>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>1:00pm</th>
+                            <td>Tanjung Tuan</td>
+                        </tr>
+                        <tr>
+                            <th>3:00pm</th>
+                            <td>Gunung Angsi</td>
+                        </tr>
+                        <tr>
+                            <th>5:00pm</th>
+                            <td>Alive 3D Art Museum</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div>
+                <div class="price" style="margin-right: 0px;">
+                    <div class="btn btn-one">
+                        <span>Price : RM4888</span>
+                    </div>
+                </div>
+                <div class="adjustment">
+                    <a href="book.html" class="cta">
+                    <span>Book Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+        <!--line 2-->
+        <hr>
+        </div>
+        <br/><br/><br/>
+        <div class="fadein2">
+        <div class="containerlul">
+            <div>
+                <br/><br/><br/>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/melacca/WeChat Image_20200823144827.jpg" alt="melacca" width="350" height="300">
+                </div>
+                <div style="margin-left: 155px;">
+                    <p class="title">
+                    <div class="btn btn-one">
+                        <span style="font-family: cursive;font-size: 25px;"><b>Melacca</b></span>
+                    </div>
+                </p>
+                </div>
+            </div>
+            <div style="margin: auto;">
+                <table class="hoverTable" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Place</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>8:00am</th>
+                            <td>A Famosa</td>
+                        </tr>
+                        <tr>
+                            <th>10:00am</th>
+                            <td>Melacca River</td>
+                        </tr>
+                        <tr>
+                            <th>12:00pm</th>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>1:00pm</th>
+                            <td>Ayer Keroh</td>
+                        </tr>
+                        <tr>
+                            <th>3:00pm</th>
+                            <td>Melaka Straits Mosque</td>
+                        </tr>
+                        <tr>
+                            <th>5:00pm</th>
+                            <td>St.Paul's Church</td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+            </div>
+            <div>
+                <div class="price" style="margin-right: 0px;">
+                    <div class="btn btn-one">
+                        <span>Price : RM4888</span>
+                    </div>
+                </div>
+                <div class="adjustment">
+                    <a href="book.html" class="cta">
+                    <span>Book Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+        <!--line 3-->
+        <hr>
+        </div>
+        <div class="fadein4">
+        <br/><br/><br/>
+        <div class="containerlul">
+            <div>
+                <br/><br/>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/johor/WeChat Image_20200823144902.jpg" alt="johor" width="350" height="300">
+                </div>
+                <div style="margin-left: 155px;">
+                    <p class="title">
+                    <div class="btn btn-one">
+                        <span style="font-family: cursive;font-size: 25px;"><b>Johor</b></span>
+                    </div>
+                </p>
+                </div>
+            </div>
+            <div style="margin: auto;">
+                <table class="hoverTable" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Place</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>8:00am</th>
+                            <td>Mount Ophir</td>
+                        </tr>
+                        <tr>
+                            <th>10:00am</th>
+                            <td>Pulau Sibu</td>
+                        </tr>
+                        <tr>
+                            <th>12:00pm</th>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>1:00pm</th>
+                            <td>LEGOLAND Malaysia</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> 
+            <div>
+                <div class="price" style="margin-right: 0px;">
+                    <div class="btn btn-one">
+                        <span>Price : RM4888</span>
+                    </div>
+                </div>
+                <div class="adjustment">
+                    <a href="book.html" class="cta">
+                    <span>Book Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+        </blockquote>
+        <br/><br/>
+        <div class="bg-image4">
+            <div class="blur"></div>
+        </div>
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

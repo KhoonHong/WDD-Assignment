@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/idetails.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/details.js"></script>
+        <script src="javascript/basic.js"></script>
+    </head>
+    <body>
+        
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Your content start here!!! -->
+        <div class="header" style="background-image: url(img/interp/tokyoheader.jpg);">
+            <div class="h1">
+                <map id="FPMap0" name="FPMap0">
+				<area coords="4, 66, 14, 54, 12, 19, 133, 16, 136, 51, 149, 75, 146, 136, 122, 135, 123, 119, 30, 122, 14, 133, 0, 128, 2, 61, 16, 49, 10, 16" onclick="showHotel(); return false;" href="#hotel" shape="polygon">
+				</map>
+                <img src="img/interp/hotel.png" alt="hotel" usemap="#FPMap0" />
+                <h1>Hotel</h1>
+            </div>
+            <div class="h2">
+                <map id="FPMap1" name="FPMap1">
+				<area coords="34, 111, 11, 98, 14, 89, 44, 94, 58, 63, 9, 35, 10, 30, 90, 40, 114, 11, 140, 6, 146, 28, 108, 63, 121, 137, 119, 145, 83, 93, 57, 107, 58, 139" onclick="showFlight(); return false;" href="#flight" shape="polygon">
+				</map>
+                <img src="img/interp/flight.png" alt="flight" usemap="#FPMap1" />
+                <h1>Flight</h1>
+            </div>
+            <div class="h3">
+                <map id="FPMap2" name="FPMap2">
+				<area coords="20, 126, 23, 53, 2, 35, 6, 14, 30, 4, 55, 5, 55, 24, 80, 27, 77, 11, 87, 11, 90, 24, 116, 27, 118, 14, 125, 14, 126, 27, 141, 30, 144, 126, 21, 132, 22, 116" onclick="showSchedule(); return false;" href="#schedule" shape="polygon">
+				</map>
+                <img src="img/interp/schedule.png" alt="schedule" usemap="#FPMap2" />
+                <h1>Schedule</h1>
+            </div>
+        </div>
+
+        <div class="hotel" id="hotel">
+            <div class="hotelImg">
+                <img src="img/list/daiwa.jpg" alt="hotelimage" />
+            </div>
+            <div class="hotelDesc">
+                <h1>Daiwa Roynet Hotel Ginza</h1>
+                <p>20 seconds walk from Tokyo Metro Yurakucho Line" Ginza 1 chome Station " exit 10. Excellent location.
+                    Ginza Six is ​​a 10-minute walk from the hotel. Kabukiza is a 10-minute walk from the hotel. Ginza Mitsukoshi is a 5-minute walk from the hotel.
+                    All rooms are equipped with free Wi-Fi / wired LAN double connection so you can search for sightseeing spots and traffic information smoothly.
+                    Bathroom and toilet are completely independent type, bathroom has washroom.
+                    I design a comfortable stay of "cool" and "adult". New attraction to Tokyo Stay.</p>
+                <p style="text-align: center;"><a href="book.html">Book Now</a></p>
+            </div>
+        </div>
+
+        <div class="flight" id="flight">
+            <div class="flightDesc">
+                <h1>AirAsia</h1>
+                <p>
+                    AirAsia Berhad is a Malaysian low-cost airline headquartered near Kuala Lumpur, Malaysia. It is the largest airline in Malaysia by fleet size and destinations. AirAsia Group operates scheduled domestic and international flights to more than 165 destinations spanning 25 countries.
+                </p>
+                <p style="text-align: center;">Departure time: 7am <span style="margin-left: 50px;">Arrival time: 12pm</span></p>
+                <p style="text-align: center;"><a href="book.html">Book Now</a></p>
+            </div>
+            <div class="flightImg">
+                <img src="img/list/airasia.jpg" alt="airasia" />
+            </div>
+        </div>
+
+        
+        <div class="schedule" id="schedule">
+            <h1 class="sheader">Schedule</h1>
+            <div class="scontainer">
+            <div class="sdetail sd1">
+                <h1>Day 1<br/><span class="date">(20th November 2020)</span></h1>
+                <ul>
+                    <li>Departurer from KLIA</li>
+                    <li>Check in hotel</li>
+                    <li>Sensoji Temple</li>
+                    <li>Meiji Jingu</li>
+                    <li>Hamarikyu Gardens</li>
+                </ul>
+            </div>
+            <div class="sdetail sd2">
+                <h1>Day 2<br/><span class="date">(21th November 2020)</span></h1>
+                <ul>
+                    <li>Edo-Tokyo Museum</li>
+                    <li>Tokyo Tower</li>
+                    <li>Tokyo Skytree</li>
+                    <li>Sumida River</li>
+                    <li>Ginza/li>
+                </ul>
+
+            </div>
+            <div class="sdetail sd3">
+                <h1>Day 3<br/><span class="date">(22th November 2020)</span></h1>
+                <ul>
+                    <li>Odaiba</li>
+                    <li>Jiyugaoka</li>
+                    <li>Daikanyama</li>
+                    <li>Shinbashi</li>
+                    <li>Departure from HND</li>
+                </ul>
+            </div>
+            </div>
+            <p style="text-align: center;"><a href="book.html">Book Now</a></p>
+        </div>
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

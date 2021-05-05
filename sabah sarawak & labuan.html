@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/northernregion.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/titleanddescript.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/home.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/home.js"></script>
+        <script src="javascript/westmalaysia.js"></script>
+        <script>
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                fadeIn(document.querySelector(".fadein3"), 7000);
+                if (currentScroll >= 500){
+                    fadeIn(document.querySelector(".fadein1"), 8000);
+                }
+                if (currentScroll >= 1000){
+                    fadeIn(document.querySelector(".fadein2"), 8000);
+                }   
+                if (currentScroll >= 1400){
+                    fadeIn(document.querySelector(".fadein4"), 8000);
+                }   
+            }
+            )
+        </script>
+    </head>
+    <body>
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Your content start here!!! -->
+        <br/><br/><br/><br/><br/>
+        <div class="bg-image3">
+            <div class="blur"></div>
+        </div>
+        <blockquote>
+        <br/>
+        <div class="fadein3">
+        <h1 class="title1">East Malaysia</h1>
+        <div class="aligner">
+            <p class="description"> Borneo, the world's third largest island, which consists of the Malaysian states of Sabah
+            which is closer to the Philippines than to mainland Malaysia, Sarawak in the west, and the Federal Territory of Labuan. Labuan is an island in its small archipelago of the same name due north of Brunei; its closest land mass is with Sabah. It lies to the east of Peninsular Malaysia (also known as West Malaysia), the part of the country on the Malay Peninsula. The two are separated by the South China Sea.</p>
+        </div>
+        
+        </div>
+        <br/><br/><br/>
+        <!--line 1-->
+        <div class="fadein1">
+        <div class="containerlul">
+            <div>
+                <br/><br/><br/>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/sabah/diving-in-asia-588510983df78c2ccd5e4d51.jpg" alt="sabah" width="350" height="300">
+                </div>
+                <div style="margin-left: 150px;">
+                    <p class="title">
+                    <div class="btn btn-one">
+                        <span style="font-family: cursive;font-size: 25px;"><b>Sabah</b></span>
+                    </div>
+                </p>
+                </div>
+            </div>
+            <div style="margin: auto;">
+                <table class="hoverTable" style="width: 150%;">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Place</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                        <th>8:00am</th>
+                        <td>Mount Kinabalu</td>
+                    </tr>
+                    <tr>
+                        <th>10:00am</th>
+                        <td>Mabul Island</td>
+                    </tr>
+                    <tr>
+                        <th>12:00pm</th>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <th>1:00pm</th>
+                        <td>Pulau Tiga</td>
+                    </tr>
+                    <tr>
+                        <th>3:00pm</th>
+                        <td>Mengalum Island</td>
+                    </tr>
+                    <tr>
+                        <th>5:00pm</th>
+                        <td>Pom Pom Island</td>
+                    </tr>
+                    </tfoor>
+                </table>
+            </div>
+            <div>
+                <div class="price" style="margin-right: 0px;">
+                    <div class="btn btn-one">
+                        <span>Price : RM4888</span>
+                    </div>
+                </div>
+                <div class="adjustment">
+                    <a href="book.html" class="cta">
+                    <span>Book Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+        <!--line 2-->
+        <hr>
+        </div>
+        <br/><br/><br/>
+        <div class="fadein2">
+        <div class="containerlul">
+            <div>
+                <br/><br/><br/>
+                <div class="fade-in">
+                    <img class="image"  src="img/pictures/sarawak/Sarawak.jpg" alt="sarawak" width="350" height="300">
+                </div>
+                <div style="margin-left: 150px;">
+                    <p class="title">
+                    <div class="btn btn-one">
+                        <span style="font-family: cursive;font-size: 25px;"><b>Sarawak</b></span>
+                    </div>
+                </p>
+                </div>
+            </div>
+            <div style="margin: auto;">
+                <table class="hoverTable" style="width: 140%;">
+                    <thead>
+                        <tr>
+                        <th>Time</th>
+                        <th>Place</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                        <th>8:00am</th>
+                        <td>Mount Santubung</td>
+                    </tr>
+                    <tr>
+                        <th>10:00am</th>
+                        <td>Sarawak Museum</td>
+                    </tr>
+                    <tr>
+                        <th>12:00pm</th>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <th>1:00pm</th>
+                        <td>Fort Margherita</td>
+                    </tr>
+                    <tr>
+                        <th>5:00pm</th>
+                        <td>Bako National Park</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div>
+                <div class="price" style="margin-right: 0px;">
+                    <div class="btn btn-one">
+                        <span>Price : RM4888</span>
+                    </div>
+                </div>
+                <div class="adjustment">
+                    <a href="book.html" class="cta">
+                    <span>Book Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+        <!--line 3-->
+        <hr>
+        </div>
+        <div class="fadein4">
+        <br/><br/><br/>
+        <div class="containerlul">
+            <div>
+                <br/><br/>
+                <div class="fade-in">
+                    <img class="image" src="img/pictures/labuan/Labuan_Financial_Park_-_01.jpg" alt="labuan" width="350" height="300">
+                </div>
+                <div style="margin-left: 150px;">
+                    <p class="title">
+                    <div class="btn btn-one">
+                        <span style="font-family: cursive;font-size: 25px;"><b>Labuan</b></span>
+                    </div>
+                </p>
+                </div>
+            </div>
+            <div style="margin: auto;">
+                <table class="hoverTable" style="width: 130%;">
+                    <thead>
+                        <tr>
+                        <th>Time</th>
+                        <th>Place</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>8:00am</th>
+                            <td>Labuan War Cemetery</td>
+                        </tr>
+                        <tr>
+                            <th>10:00am</th>
+                            <td>Labuan Bird Park</td>
+                        </tr>
+                        <tr>
+                            <th>12:00pm</th>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>1:00pm</th>
+                            <td>Labuan Museum</td>
+                        </tr>
+                        <tr>
+                            <th>3:00pm</th>
+                            <td>Labuan Marine Museum</td>
+                        </tr>
+                        <tr>
+                            <th>5:00pm</th>
+                            <td>Pulau Rugokan Besar</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> 
+            <div>
+                <div class="price" style="margin-right: 0px;">
+                    <div class="btn btn-one">
+                        <span>Price : RM4888</span>
+                    </div>
+                </div>
+                <div class="adjustment">
+                    <a href="book.html" class="cta">
+                    <span>Book Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+        </blockquote>
+        <br/><br/>
+        <div class="bg-image3">
+            <div class="blur"></div>
+        </div>
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

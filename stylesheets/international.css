@@ -1,0 +1,117 @@
+.package1, .package2{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e9f6fb;
+    font-family: cursive;
+}
+
+.package2 {
+    background-color: white;
+}
+
+.p1img, .p2img {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.p1desc, .p2desc {
+    width: 50%;
+    float: left;
+}
+
+.p1img img, .p2img img{
+    width: 80%;
+    margin: 20px auto;
+    border: 3px solid rgb(0, 0, 102, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.package1::after, .package2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.p1desc h1, .p2desc h1{
+    text-align: center;
+    margin-top: 140px;
+}
+
+.p1desc p, .p2desc p {
+    text-align: justify;
+    padding: 0px 50px;
+}
+
+.p1desc a, .p2desc a, #bdesc a{
+    text-decoration: none;
+    color: rgb(87, 39, 7);
+    background-color: rgb(230, 255, 255);
+    padding: 10px;
+    width: 100%;
+    border-color: rgb(0, 0, 102);
+    border-radius: 5px;
+    border-style: solid;
+    margin: auto;
+    text-align: center;
+}
+
+.p1desc a:hover, .p2desc a:hover, #bdesc a:hover {
+    
+    background-color: rgba(135,206,235, 0.6);
+}
+#bdesc a:hover {
+    
+    background-color: rgb(135,206,235);
+}
+
+.custom {
+    background: url('../img/interp/custom.jpg') no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    height: 500px;
+}
+
+.cdesc{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#desc {
+    width: 80%;
+    margin: 100px auto 0px;
+    font-size: 1.3em;
+    font-family: cursive;
+    text-align: justify;
+}
+
+#bdesc{
+    margin-top: 50px;
+    font-size: 1.3em;
+    font-family: cursive;
+}
+
+.ipheader {
+    background: url('../img/interp/banner.jpg') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.ipheader h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 100px;
+}
+
+.hContainer {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 100px 0px;
+}

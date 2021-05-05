@@ -1,0 +1,140 @@
+.header{
+    background: url('../img/Malacca/headerimg.jpg') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+.header h1{
+    margin: 100px 0px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+.introduction{
+    width: 100%;
+    font-family: cursive;
+    text-align: center;
+    float: left;
+}
+.introduction p{
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+p.book,p.dealbook{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.deskl, .desk2{
+    width: 47%;
+    float: left;
+    margin: auto;
+}
+.deskl img,.desk2 img{
+    width: 100%;
+    height: 450px;
+
+}
+
+.deskl p, .desk2 p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.smalldesk {
+    margin-bottom: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.destination::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.desk2{
+    float: right;
+}
+.destination{
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+.flightdeals{
+    float: left;
+    width: 100%;
+}
+.destination h1{
+    text-align: center;
+    border:3px solid rgb(0, 0, 102, 0.5);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    }
+
+.introduction a,.flightdeals a{
+    color: rgb(87, 39, 7);
+    background-color: rgb(230, 255, 255);
+    padding: 10px;
+
+    border-color: rgb(0, 0, 102);
+    border-radius: 5px;
+    border-style: solid;
+    
+}
+.flightdeals{
+    width: 98%;
+    font-family: cursive;
+    text-align: center;
+    }
+.flightdeals img{
+    width: 100%;
+    height: auto;
+}
+.flightdeals .deal{
+    background-color:  rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 10px solid rgba(0,0,0,0);
+}
+
+.flightdeals h1{
+    width: 23%;
+    float: left;
+    clear: left;
+    margin-left: 5px;
+}
+.flightdeals p{
+    width: 73%;
+    float: left;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.flightdeals .title{
+    width: 100%;
+    float: none;
+}
+.deal::after{
+    clear: both;
+    display: table;
+    content:"";
+}
+body{
+    background-color: #e9f6fb;
+}
+a{
+	text-decoration: none;
+}

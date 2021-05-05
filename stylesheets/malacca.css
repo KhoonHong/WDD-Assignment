@@ -1,0 +1,111 @@
+.header{
+    background: url('../img/Malacca/headerimg.jpg') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+.header h1{
+    margin: 100px 0px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.introduction{
+    width: 100%;
+    font-family: cursive;
+    text-align: center;
+    
+}
+.introduction p{
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.destination{
+    float: left;
+    width: 30%;
+    text-align: center;
+    
+}
+.destination h1{
+    border:3px solid rgb(0, 0, 102, 0.5);
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.destination img{
+    width: 80%;
+    border:3px solid rgb(0, 0, 102, 0.5);
+}
+
+.introduction a,.flightdeals a{
+    color: rgb(87, 39, 7);
+    background-color: rgb(230, 255, 255);
+    padding: 10px;
+
+    border-color: rgb(0, 0, 102);
+    border-radius: 5px;
+    border-style: solid;
+    
+}
+.flightdeals{
+    width: 100%;
+    font-family: cursive;
+    text-align: center;
+    }
+.flightdeals img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    float: left;
+    width: 70%;
+}
+.flightdeals .deal{
+    background-color:  rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 10px solid rgba(0,0,0,0);
+}
+
+.flightdeals h1{
+    width: 23%;
+    float: left;
+    clear: left;
+    margin-left: 5px;
+}
+.flightdeals p{
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    font-size: 25px;
+}
+p.book{
+    text-align: center;
+    width: 25%;
+    float: left;
+    margin-top: 0px;
+}
+.flightdeals .title{
+    width: 100%;
+    float: none;
+}
+.deal::after{
+    clear: both;
+    display: table;
+    content:"";
+}
+body{
+    background-color: #e9f6fb;
+}
+
+a{
+	text-decoration: none;
+}

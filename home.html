@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/home.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/home.js"></script>
+        <script src="javascript/basic.js"></script>
+        <script>
+            
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                if(currentScroll >= 600){
+                    fadeIn(document.querySelector(".ip1"), 500);
+                    setTimeout("fadeIn(document.querySelector('.ip2'), 500);", 500);
+                }
+                if(currentScroll >= 1000){
+                    fadeIn(document.querySelector(".t5desc"), 900);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Your content start here!!! -->
+
+        <!-- Slide show -->
+        <div class="slideshow" id="slideshow" style="min-height: 540px;">
+            <p class="back">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <a onclick="ssBack(); return false;"><</a></p>
+            <p class="forth">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/><a onclick="ssForward(); return false;">></a></p>
+        </div>
+        
+       <div class="packages">
+            <!-- Domestic package featured list -->
+        <div class="dpackage">
+            <h1>Promotions</h1>
+        <div class="dpcontainer">
+            <div class="dp1" style="opacity: 0;">
+                <script>
+                    fadeIn(document.querySelector(".dp1"), 500);
+                </script>
+                <img src="img/home/penang.jpg" alt="Penang" />
+                <h1>Penang</h1>
+                <p><a href="Penanghome.html">Check it out!</a></p>
+            </div>
+            <div class="dp2" style="opacity: 0;">
+                <script>
+                    setTimeout("fadeIn(document.querySelector('.dp2'), 500);", 500);
+                </script>
+                <img src="img/home/kualalumpur.jpg" alt="Kuala Lumpur" />
+                <h1>Kuala Lumpur</h1>
+                <p><a href="KLhome.html">Check it out!</a></p>
+            </div>
+            <div class="dp3" style="opacity: 0;">
+                <script>
+                    setTimeout("fadeIn(document.querySelector('.dp3'), 500);", 1000);
+                </script>
+                <img src="img/home/malacca.jpg" alt="Malacca" />
+                <h1>Malacca</h1>
+                <p><a href="Malaccahome.html">Check it out!</a></p>
+            </div>
+        </div>
+        </div>
+
+        <!--International Package Featured List-->
+        <div class="ipackage">
+            <div class="ipcontainer">
+                <h1>International Package</h1>
+                <div class="ip1" style="opacity: 0;">
+                    <img src="img/interp/seoul.jpg" alt="seoul" />
+                    <h1>Seoul</h1>
+                    <p><a href="seoul.html">Check it out!</a></p>
+                </div>
+                <div class="ip2" style="opacity: 0;">
+                    <img src="img/interp/tokyo.jpg" alt="tokyo" />
+                    <h1>Tokyo</h1>
+                    <p><a href="seoul.html">Check it out!</a></p>
+                </div>
+            </div>
+        </div>
+       </div>
+
+        <!-- Top 5 Destination -->
+        <div class="top5">
+            <div class="t5pic">
+                <img src="img/top5.jpg" alt="Top 5" />
+            </div>
+            <div class="t5desc" style="opacity: 0;">
+                <h1>Top Picks Destination in Malaysia</h1>
+                <p> 
+                    As Malaysia is an exotic land chock-full of historical, cultural and natural wealth, it’s understandable if you’re having difficulties in choosing the right tour for you and your family. From exploring the capital city on foot to scaling the heights of Mount Kinabalu, there is a variety of tour packages that lets you experience Malaysia in every way.
+                    <br/>
+                     Most of these day and night excursions are inclusive of airport transfers, accommodations, meals, and travel insurance, guaranteeing a comfortable and hassle-free tour experience for travellers of all ages.
+                                    </p>
+                <br/>
+                <p style="text-align: center;"><a href="Top5_Destinations.html">Check it out!</a></p>
+            </div>
+        </div>
+
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com"  target="_blank">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com" target="_blank">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com" target="_blank">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="" enctype="text/plain">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>

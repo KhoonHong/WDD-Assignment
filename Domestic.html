@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Arc - Everyone can travel!</title>
+        <meta charset="UTF-8" />
+        <link href="stylesheets/flexbox.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/titleanddescript.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/basic.css" rel="stylesheet" type="text/css" />
+        <!--Change here to your corresponding CSS file! This is my example css file link-->
+        <link href="stylesheets/home.css" rel="stylesheet" type="text/css" />
+        <script src="javascript/domestic.js"></script>
+        <script src="javascript/home.js"></script>
+        <script src="javascript/westmalaysia.js"></script>
+        <script>
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll >= 200){
+                    fadeIn(document.querySelector(".fadein1"), 8000);
+                }
+                if (currentScroll >= 400){
+                    fadeIn(document.querySelector(".fadein2"), 8000);
+                }   
+                if (currentScroll >= 800){
+                    fadeIn(document.querySelector(".fadein4"), 8000);
+                }   
+            }
+            )
+        </script>
+    </head>
+    <body>
+        <!--Navigation bar (Keep for every pages)-->
+        <nav>
+            <div class="air">
+                <p></p>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png" alt="Travel Arc" />
+                <h1>
+                    TravelArc
+                </h1>
+                </a> 
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="aboutUs.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Promotions</a>
+                    <div class="dropdown-content">
+                        <a href="Penanghome.html">Penang</a>
+                        <a href="KLhome.html">Kuala Lumpur</a>
+                        <a href="Malaccahome.html">Malacca</a>
+                    </div>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Domestic.html">Domestic</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Top5_Destinations.html">Top Picks</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">T&C</a>
+                        <a href="privacyPolicy.html">Privacy Policy</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Your content start here!!! -->
+        <br/><br/><br/>
+        <div class="bg-image">
+            <div class="blur"></div>
+        </div>
+        <h1 class="title1">Domestic</h1>
+        <blockquote>
+            <br/>
+            <div class="aligner">
+                <p class="description">This page will be displaying two primary parts, namely East Malaysia and West Malaysia. <br/>Tired of choosing which country to travel next? or you are a hodophile but got leashed on a tight budget right now?
+                 Malaysians can opt to travel locally or known as <cite>cuti-cuti Malaysia</cite> for the locals here. Besides, due to the pandemic, strictly no international travelling statute has been imposed by the government in order to reduce the casualties. So, hodophiles would have no alternative but to opt for domestic travelling for the time being. Scroll down to find out more!</p>
+            </div>
+
+        </blockquote>
+        <br/><br/>
+        <blockquote>
+            <div class="fadein1">
+        <div class="flex-container">
+            <div>
+                <div style="margin-right: 50px;">
+                    <img class="image" style="border-radius: 10px;box-shadow: 10px 10px 10px grey;" src="img/image east malaysia.png" alt="east malaysia" width="400" height="350">
+                <div style="text-align:center;margin-left: 70px;" class="btn btn-one">
+                    <span><p style="font-size: 25px;font-family: cursive;"><b>East Malaysia</b></p></span>
+                </div>
+                <br/>
+                <div style="margin-left:80px">
+                <a href="East Malaysia.html" class="cta">
+                    <span>Discover Now</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>                
+                <br/><br/>
+                </div>
+                
+                <iframe style="border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4075089.890864742!2d112.15881768360478!3d4.105527308320805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321c79525d704611%3A0x32c8eb4bfead6c70!2sEast%20Malaysia!5e0!3m2!1sen!2smy!4v1598695561117!5m2!1sen!2smy" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div>
+                <div>
+                    <img class="image" style="border-radius: 10px;box-shadow: 10px 10px 10px grey;" src="img/image west malaysia.jpg" alt="west malaysia" width="400" height="350">
+                    <div style="text-align:center;margin-left: 70px;" class="btn btn-one">
+                        <span><p style="font-size: 25px;font-family: cursive;"><b>West Malaysia</b></p></span>
+                    </div>
+                
+                <div style="margin-left:80px">
+                    <br/>
+                    <a href="West Malaysia.html" class="cta">
+                        <span>Discover Now</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                </div>
+                <br/><br/> 
+                
+                </div>
+                
+                <iframe style="border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4075655.57431976!2d99.96901818186002!3d3.993185519860726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c94eb228cfe0af%3A0x3bed7fe073d68bc6!2sPeninsular%20Malaysia!5e0!3m2!1sen!2smy!4v1598695497330!5m2!1sen!2smy" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            </div> 
+        </div>
+    </blockquote>
+        <div class="fadein2">
+                <div class="slideshow" id="slideshow" style="width: 80%; margin-left: 10%;"></div> 
+        </div>
+            
+        
+        <div class="fadein4">
+            <hr>
+            <div class="bg-img">
+                
+                <br/><br/><br/><br/>
+                <form action="/action_page.php" class="container">
+
+                    <div>
+                        <h1 style="text-align:center;font-size:180%;font-family:cursive">Subsribe to our mail listings</h1>
+                <p style="text-align: center;font-family: cursive;">(You can opt in for weekly notification for newsletters sent directly to your e-mail account.)</p>
+                    </div>
+
+                <label for="email"><b>Email Address</b></label>
+                <input class="forminput" type="text" placeholder="Enter Email" name="email" required><br/><br/>
+            
+                <label for="first"><b>First Name</b></label>
+                <input class="forminput" type="text" placeholder="Enter First Name" name="first" required><br/><br/>
+
+                <label for="first"><b>Last Name</b></label>
+                <input class="forminput" type="text" placeholder="Enter Last Name" name="last" required><br/><br/>
+            
+                <button type="submit" class="btn1">submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="bg-image">
+            <div class="blur"></div>
+        </div>
+
+        <!-- Your content end here!! -->
+
+        <!-- Footer (Keep for every pages) -->
+        <footer>
+            <div class="contactus">
+                <h1 class="cuh1">Contact Us</h1>
+                <br />
+                <h2>TRAVEL ARC SDN BHD</h2>
+                <p>
+                    Company Registration No: 1013531-V
+                    <br>
+                    Tourism License: KPK LN:6946
+                    <br>
+                </p>
+                <p class="address">
+                    <img src="img/list/address.png" />
+                    <span>77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</span>
+                </p>
+                <p class="tel">
+                    <img src="img/list/phone.png" />
+                    <span>04-899 5230</span>
+                </p>
+            </div>
+            <div class="hotline">
+                <h1>Email</h1>
+                <p class="email">
+                    <img src="img/list/email.png" />
+                    <span><a href="mailto:pohch-pm20@student.tarc.edu.my">info@travelarc.com.my</a></span>
+                </p>
+                <h1 class="smedia">Social Media</h1>
+                <p class="facebook">
+                    <img src="img/list/facebook.png" />
+                    <span><a href="http://www.facebook.com">Facebook</a></span>
+                </p>
+                <p class="twitter">
+                    <img src="img/list/twitter.png" />
+                    <span><a href="http://www.twitter.com">Twitter</a></span>
+                </p>
+                <p class="instagram">
+                    <img src="img/list/instagram.png" />
+                    <span><a href="http://www.instagram.com">Instagram</a></span>
+                </p>
+            </div>
+            <div class="gettouch">
+                <h1>Get in touch with us!</h1>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" /><br/>
+                    <input type="email" id="email" name="email" placeholder="Your Email" /><br/>
+                    <textarea type="text" id="msg" name="msg" placeholder="Messages" ></textarea><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>
